@@ -1,0 +1,173 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:padding="20dp"
+    android:background="#3B3B3B">
+
+    <TextView
+        android:id="@+id/heading"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp"
+
+        android:textStyle="bold"
+        android:fontFamily="sans-serif-smallcaps"
+        android:textColor="@color/white"
+        android:textSize="30sp"
+        android:text="Student Registration" />
+
+    <TextView
+        android:id="@+id/txtId"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/heading"
+        android:layout_marginTop="60dp"
+
+        android:fontFamily="@font/productsansregular"
+        android:textSize="25sp"
+        android:layout_marginLeft="20dp"
+        android:textColor="@color/white"
+        android:text="ID: "/>
+
+    <EditText
+        android:id="@+id/editTxtId"
+        android:layout_width="240dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/heading"
+        android:layout_marginTop="48dp"
+
+        android:fontFamily="@font/productsansregular"
+        android:textSize="25sp"
+        android:layout_marginLeft="20dp"
+        android:textColor="@color/white"
+        android:hint="Enter your ID" />
+
+    <TextView
+        android:id="@+id/txtName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/txtId"
+        android:layout_marginTop="38dp"
+
+        android:fontFamily="@font/productsansregular"
+        android:textSize="25sp"
+        android:layout_marginLeft="20dp"
+        android:textColor="@color/white"
+        android:text="Name: "/>
+
+    <EditText
+        android:id="@+id/editTxtName"
+        android:layout_width="240dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/editTxtId"
+        android:layout_marginTop="16dp"
+
+        android:fontFamily="@font/productsansregular"
+        android:textSize="25sp"
+        android:layout_marginLeft="20dp"
+        android:textColor="@color/white"
+        android:hint="Enter your name"/>
+
+    <TextView
+        android:id="@+id/txtAge"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/txtName"
+        android:layout_marginTop="38dp"
+
+        android:fontFamily="@font/productsansregular"
+        android:textSize="25sp"
+        android:layout_marginLeft="20dp"
+        android:textColor="@color/white"
+        android:text="Age: "/>
+
+    <EditText
+        android:id="@+id/editTxtAge"
+        android:layout_width="240dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/editTxtName"
+        android:layout_marginTop="16dp"
+
+        android:fontFamily="@font/productsansregular"
+        android:textSize="25sp"
+        android:layout_marginLeft="20dp"
+        android:textColor="@color/white"
+        android:hint="Enter your age"/>
+
+    <TextView
+        android:id="@+id/txtBranch"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/txtAge"
+        android:layout_marginTop="38dp"
+
+        android:fontFamily="@font/productsansregular"
+        android:textSize="25sp"
+        android:layout_marginLeft="20dp"
+        android:textColor="@color/white"
+        android:text="Branch: "/>
+
+    <EditText
+        android:id="@+id/editTxtBranch"
+        android:layout_width="240dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/editTxtAge"
+        android:layout_marginTop="16dp"
+
+        android:fontFamily="@font/productsansregular"
+        android:textSize="25sp"
+        android:layout_marginLeft="20dp"
+        android:textColor="@color/white"
+        android:hint="Enter your branch"/>
+
+    <TextView
+        android:id="@+id/txtDept"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/txtBranch"
+        android:layout_marginTop="38dp"
+
+        android:fontFamily="@font/productsansregular"
+        android:textSize="25sp"
+        android:layout_marginLeft="20dp"
+        android:textColor="@color/white"
+        android:text="Dept.: "/>
+
+    <EditText
+        android:id="@+id/editTxtDept"
+        android:layout_width="240dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/editTxtBranch"
+        android:layout_marginTop="16dp"
+
+        android:fontFamily="@font/productsansregular"
+        android:textSize="25sp"
+        android:layout_marginLeft="20dp"
+        android:textColor="@color/white"
+        android:hint="Enter your dept."/>
+
+    <Button
+        android:id="@+id/btnRegister"
+        android:layout_width="200dp"
+        android:layout_height="60dp"
+        android:layout_below="@id/txtDept"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="50dp"
+
+        android:textSize="22sp"
+        android:fontFamily="@font/productsansregular"
+        android:backgroundTint="@color/black"
+        android:text="REGISTER"
+        android:onClick="registerStudent"/>
+
+</RelativeLayout>

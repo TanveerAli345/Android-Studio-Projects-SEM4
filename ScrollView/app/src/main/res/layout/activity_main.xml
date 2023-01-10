@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:padding="15dp"
+    android:background="#3B3B3B">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:id="@+id/heading"
+
+        android:textSize="28sp"
+        android:textColor="@color/white"
+        android:fontFamily="sans-serif-smallcaps"
+        android:text="Scroll View" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/heading"
+        android:layout_marginTop="12dp"
+        android:id="@+id/title"
+
+        android:textSize="28sp"
+        android:textColor="@color/white"
+        android:fontFamily="@font/productsansbold"
+        android:text="Bad Boys For Life (2020)" />
+
+    <ImageView
+        android:id="@+id/poster"
+        android:layout_width="match_parent"
+        android:layout_height="338dp"
+        android:layout_below="@+id/title"
+        android:layout_marginTop="5dp"
+        android:src="@drawable/badboysposter"/>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="245dp"
+        android:layout_below="@id/poster"
+        android:layout_marginTop="7dp">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="#4B4B4B">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:id="@+id/subheading"
+
+                android:textSize="24sp"
+                android:textColor="@color/white"
+                android:fontFamily="@font/productsansregular"
+                android:text="Synopsis:"/>
+
+            <TextView
+                android:id="@+id/synopsis"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_below="@+id/subheading"
+                android:layout_marginTop="5dp"
+
+                android:textSize="20sp"
+                android:textColor="@color/white"
+                android:fontFamily="@font/productsansregular"
+                android:text=""/>
+
+        </RelativeLayout>
+
+    </ScrollView>
+
+</RelativeLayout>

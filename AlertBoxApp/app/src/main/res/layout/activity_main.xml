@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:padding="20dp"
+    android:background="#3B3B3B">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:id="@+id/heading"
+
+        android:textSize="30sp"
+        android:textColor="@color/white"
+        android:fontFamily="sans-serif-smallcaps"
+        android:textStyle="bold"
+        android:text="AlertBox Application" />
+
+    <TextView
+        android:id="@+id/subheading"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/heading"
+        android:layout_marginTop="60dp"
+
+        android:textColor="@color/white"
+        android:textSize="30sp"
+        android:fontFamily="@font/productsansbold"
+        android:text="Your Details:"/>
+
+    <TextView
+        android:id="@+id/username"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/subheading"
+        android:layout_marginTop="30dp"
+        android:padding="10dp"
+
+        android:textColor="@color/white"
+        android:textSize="25sp"
+        android:fontFamily="@font/productsansregular"
+        android:text="Userame: "/>
+
+    <Button
+        android:id="@+id/usernameBtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/username"
+        android:layout_marginTop="20dp"
+
+        android:backgroundTint="@color/black"
+        android:fontFamily="@font/productsansregular"
+        android:textSize="20sp"
+        android:text="VIEW USERNAME"/>
+
+    <TextView
+        android:id="@+id/password"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/usernameBtn"
+        android:layout_marginTop="20dp"
+        android:padding="10dp"
+
+        android:textColor="@color/white"
+        android:textSize="25sp"
+        android:fontFamily="@font/productsansregular"
+        android:text="Password: "/>
+
+    <Button
+        android:id="@+id/passwordBtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/password"
+        android:layout_marginTop="20dp"
+
+        android:backgroundTint="@color/black"
+        android:fontFamily="@font/productsansregular"
+        android:textSize="20sp"
+        android:text="VIEW PASSWORD"/>
+
+</RelativeLayout>
